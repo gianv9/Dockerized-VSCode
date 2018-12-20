@@ -13,8 +13,6 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > mic
 RUN apt-get update && \
     apt-get install -y code
 
-RUN curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-
 COPY entrypoint.sh /
 RUN chmod 755 /entrypoint.sh
 

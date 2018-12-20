@@ -18,7 +18,7 @@ xvfb \
 xpra 
 
 # Uncomment this and the corresponding line on entrypoint.sh
-# RUN apt-get -y install firefox
+RUN apt-get -y install firefox
 
 COPY index.html /usr/share/xpra/www
 COPY entrypoint.sh /
